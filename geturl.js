@@ -1,5 +1,8 @@
 function getUrl() {
-  window.location.href = (unescape($('#flash-player-embed').attr('flashvars').split('&flv_url=')[$('#flash-player-embed').attr('flashvars').split('&flv_url=').length - 1].split('&')[0]));
+    var src = $('body').html();
+    var re_url = /html5player\.setVideoUrlHigh\s*\(\s*\'(.+)\'\s*\)\s*\;/g;
+    var arr_url = re_url.exec( src );
+    window.location.href = arr_url[1];
 }
 
 getUrl();

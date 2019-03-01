@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "Ippatsu",
-  "version": "1.0",
+  "name": "IppatsuAlt",
+  "version": "1.1",
 
-  "description": "Ippatsu extension",
+  "description": "Ippatsu Alternate extension",
   "icons": {
     "16": "icon.png"
   },
@@ -16,5 +16,5 @@
     "scripts": ["background.js"]
   },
 
-  "permissions": ["tabs", "http://www.xvideos.com/*", "http://jp.xvideos.com/*"]
+  "permissions": ["tabs", "*://*.xvideos.com/video*"]
 }
